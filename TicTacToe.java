@@ -1,4 +1,10 @@
+import java.util.*;
+
 public class TicTacToe
 {
-  jkhkahsdf
+    public static void main(String[] args)
+    {
+        UserPrompt userInput = new UserPrompt();
+        userInput.input();
+    }
 }
