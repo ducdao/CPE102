@@ -2,9 +2,10 @@ import java.util.*;
 
 public class TicTacToe
 {
-    private int playerChoice;
     public static void main(String[] args)
     {
+        private int playerChoice;
+        
         // prompts the user to play tic tac toe
         UserPrompt userInput = new UserPrompt();
         playerChoice = userInput.input();
