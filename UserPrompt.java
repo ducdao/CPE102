@@ -4,7 +4,7 @@ public class UserPrompt
 {
     public int input()
     {
-        System.out.print("\n\nWelcome to Tic Tac Toe! Would you like to play (Y/N)?  ");
+        System.out.print("\nWelcome to Tic Tac Toe! Would you like to play (Y/N)?  ");
         Scanner in = new Scanner(System.in);
         String user = in.next();
         
@@ -13,7 +13,6 @@ public class UserPrompt
             System.out.println("ERROR: Please enter a valid input (Y/N)!");
             System.out.print(" Would you like to play (Y/N)? ");
             user = in.next();
-            System.out.println(user);
         }
         
         if(user.equals("y") || user.equals("Y")) //If the user wants to play a game...
