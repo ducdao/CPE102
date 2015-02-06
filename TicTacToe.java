@@ -1,4 +1,7 @@
 public class TicTacToe
 {
-  jkhkahsdf
+  public static void main(String[] args)
+  {
+    
+  }
 }
