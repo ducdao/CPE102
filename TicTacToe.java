@@ -8,7 +8,7 @@ public class TicTacToe
         // prompts the user to play tic tac toe
         UserPrompt userInput = new UserPrompt();
         playerChoice = userInput.input();
-
+        Board b = new Board();
         // execute player vs computer class
         if (playerChoice == 1)
             {
