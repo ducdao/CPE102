@@ -10,7 +10,7 @@ public class TicTacToe
         playerChoice = userInput.input();
         Board b = new Board();
         // execute player vs computer class
-        if (playerChoice == 1)
+        /*if (playerChoice == 1)
             {
                 
             }
@@ -18,6 +18,6 @@ public class TicTacToe
         else if (playerChoice == 2)
             {
                 
-            }
+            }*/
     }
 }
