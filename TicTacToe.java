@@ -4,8 +4,8 @@ public class TicTacToe
 {
     public static void main(String[] args)
     {
-        private int playerChoice;
-        
+        int playerChoice;
+    
         // prompts the user to play tic tac toe
         UserPrompt userInput = new UserPrompt();
         playerChoice = userInput.input();
