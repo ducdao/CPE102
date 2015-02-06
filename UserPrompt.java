@@ -17,7 +17,7 @@ public class UserPrompt
         
         if(user.equals("y") || user.equals("Y")) //If the user wants to play a game...
         {
-            System.out.print("1. Player vs Player \n2. Player vs Computer\nOption 1 or 2? ");
+            System.out.print("1. Player vs Computer \n2. Player vs Player\nOption 1 or 2? ");
             return in.nextInt();
         }
         else //If user doesn't want to play...
