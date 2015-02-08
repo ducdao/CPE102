@@ -4,21 +4,26 @@ public class TicTacToe
 {
     public static void main(String[] args)
     {
-        int playerChoice;
+        int gameMode;
     
-        // prompts the user to play tic tac toe
+        //Prompts the user to play tic-tac-toe
         UserPrompt userInput = new UserPrompt();
-        playerChoice = userInput.input();
+
+        //Returns 1 (Player vs Computer) or 2 (Player vs Player)
+        gameMode = userInput.input();
+        
         Board b = new Board();
-        // execute player vs computer class
-        /*if (playerChoice == 1)
-            {
-                
-            }
-        // execute player vs player class
-        else if (playerChoice == 2)
-            {
-                
-            }*/
+        b.printBoard();
+        
+        //Execute Player vs Computer class
+        if(gameMode == 1)
+        {
+            System.out.println("Execute Player vs Computer class!");    
+        }
+        //Execute Player vs Player class
+        else if(gameMode == 2)
+        {
+            System.out.println("Execute Player vs Player class!");
+        }
     }
 }

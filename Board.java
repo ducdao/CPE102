@@ -4,7 +4,7 @@ public class Board
     {
         System.out.println(" ___|___|___");
         System.out.println(" ___|___|___");
-        System.out.println("    |   |  ");
+        System.out.println("    |   |   ");
     }
     
 }
