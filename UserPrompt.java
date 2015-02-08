@@ -4,7 +4,8 @@ public class UserPrompt
 {
     public int input()
     {
-        System.out.print("\nWelcome to Tic Tac Toe! Would you like to play (Y/N)?  ");
+        System.out.println("CPE 102 - Project 1 - Alex Deany, Duc Dao, Erza Bertuccelli, and Leticia Esparza\n")
+        System.out.print("Welcome to Tic Tac Toe! Would you like to play (Y/N)?  ");
         Scanner in = new Scanner(System.in);
         String user = in.next();
         
