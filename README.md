@@ -1,6 +1,6 @@
 # CPE102 - Tic Tac Toe Project Notes
 
-Notes for all the classes, methods, and varaibles we're using for Project 1.
+Notes for all the classes, methods, and varaibles we're using for Project 1. Feel free to edit this as needed. Markdown cheat sheet [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists).
 
 ##Classes
 Classes for the project.
