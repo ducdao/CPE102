@@ -14,8 +14,8 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
 
 * **Board**
  * Variables
-  * int array boardState: represents positions on the board
-  * int currentPlayer: 1 for X, 0 for O, maybe?
+    * int array boardState: represents positions on the board
+    * int currentPlayer: 1 for X, 0 for O, maybe?
     “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
  * Methods:
   * display: prints the current board state
