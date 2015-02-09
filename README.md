@@ -4,9 +4,9 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
 
 ##Classes
 * **TicTacToe** 
-  * Coordinates other classes
-  * Creates a Board object
-  * Contains main game loop
+ * Coordinates other classes
+ * Creates a Board object
+ * Contains main game loop
 
 * **UserPrompt**
  * Methods
@@ -14,32 +14,32 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
 
 * **Board**
  * Variables
-   * int array boardState: represents positions on the board
-   * int currentPlayer: 1 for X, 0 for O, maybe?
-   “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
+  * int array boardState: represents positions on the board
+  * int currentPlayer: 1 for X, 0 for O, maybe?
+    “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
  * Methods:
-   * display: prints the current board state
-   * reset: resets all values in the array to 0
-   * endTurn: swaps the currentPlayer
-   * checkTie: determines whether or not the game is a tie (by seeing if there are any spaces left open: checkWinner       should run after each move is made, so if it doesn’t see a winner, checkTie will run and report a tie if there        are no more open spaces)
-   * checkWinner: checks whether or not the active player won after a play is made
-   * move: sends an X or an O to a spot on the board
-      * parameters: int spot
-      make sure the move is valid/spot is unoccupied
+  * display: prints the current board state
+  * reset: resets all values in the array to 0
+  * endTurn: swaps the currentPlayer
+  * checkTie: determines whether or not the game is a tie (by seeing if there are any spaces left open: checkWinner       should run after each move is made, so if it doesn’t see a winner, checkTie will run and report a tie if there        are no more open spaces)
+  * checkWinner: checks whether or not the active player won after a play is made
+  * move: sends an X or an O to a spot on the board
+   * parameters: int spot
+     make sure the move is valid/spot is unoccupied
 
 * **AIOpponent**
-   * Variables
-   * Methods
-      * bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move         method)
-      * parameters: Board board
-        should check the current board state and recognize whether the move to be made is for X or O
-         make sure the move is valid/spot is unoccupied
-      * randomMove: alternatively, the AI could just move randomly
-         * parameters: Board board
-         make sure the move is valid/spot is unoccupied
+ * Variables
+ * Methods
+  * bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move         method)
+  * parameters: Board board
+    should check the current board state and recognize whether the move to be made is for X or O
+    make sure the move is valid/spot is unoccupied
+  * randomMove: alternatively, the AI could just move randomly
+   * parameters: Board board
+     make sure the move is valid/spot is unoccupied
 
 
-#$Sample Program
+#Sample Program
 1. User starts program
 2. Welcome screen displayed, asks if user wants to play a game
 3. Takes either y or n as input
