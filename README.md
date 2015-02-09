@@ -9,33 +9,33 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
  * Contains main game loop
 
 * **UserPrompt**
- * Variables:
- * Methods:
- * Input: Welcomes user and prompts for input; returns an int: 1 for a Player vs Computer game, 2 for Player vs  Player, and 0 to exit
+ * Methods
+   * Input: Welcomes user and prompts for input; returns an int: 1 for a Player vs Computer game, 2 for Player vs          Player, and 0 to exit
+
 * **Board**
- * Variables:
- * int array boardState: represents positions on the board
- * int currentPlayer: 1 for X, 0 for O, maybe?
+ * Variables
+   * int array boardState: represents positions on the board
+   * int currentPlayer: 1 for X, 0 for O, maybe?
    “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
  * Methods:
-display: prints the current board state
-reset: resets all values in the array to 0
-endTurn: swaps the currentPlayer
-checkTie: determines whether or not the game is a tie (by seeing if there are any spaces left open: checkWinner should run after each move is made, so if it doesn’t see a winner, checkTie will run and report a tie if there are no more open spaces)
-checkWinner: checks whether or not the active player won after a play is made
-move: sends an X or an O to a spot on the board
-parameters: int spot
-make sure the move is valid/spot is unoccupied
-OpponentAI
-variables:
-methods:
-bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move method)
-parameters: Board board
-should check the current board state and recognize whether the move to be made is for X or O
-make sure the move is valid/spot is unoccupied
-randomMove: alternatively, the AI could just move randomly
-parameters: Board board
-make sure the move is valid/spot is unoccupied
+   * display: prints the current board state
+   * reset: resets all values in the array to 0
+   * endTurn: swaps the currentPlayer
+   * checkTie: determines whether or not the game is a tie (by seeing if there are any spaces left open: checkWinner       should run after each move is made, so if it doesn’t see a winner, checkTie will run and report a tie if there        are no more open spaces)
+   * checkWinner: checks whether or not the active player won after a play is made
+   * move: sends an X or an O to a spot on the board
+      * parameters: int spot
+      make sure the move is valid/spot is unoccupied
+* **AIOpponent**
+   * Variables
+   * Methods
+      * bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move         method)
+      * parameters: Board board
+        should check the current board state and recognize whether the move to be made is for X or O
+         make sure the move is valid/spot is unoccupied
+      * randomMove: alternatively, the AI could just move randomly
+         * parameters: Board board
+         make sure the move is valid/spot is unoccupied
 
 
 Sample program run:
