@@ -1,7 +1,6 @@
-# CPE102
-CPE 102 Project Notes
+# CPE102 - Tic Tac Toe Project Notes
 
-Tic Tac Toe
+Notes for all the classes, methods, and varaibles we're using for Project 1.
 
 ##Classes
 * TicTacToe
