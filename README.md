@@ -4,7 +4,7 @@ CPE 102 Project Notes
 Tic Tac Toe
 
 ##Classes
-*TicTacToe
+* TicTacToe
 coordinates other classes
 creates a Board object
 contains main game loop
