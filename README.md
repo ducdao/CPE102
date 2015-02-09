@@ -3,16 +3,16 @@
 Notes for all the classes, methods, and varaibles we're using for Project 1.
 
 ##Classes
-* TicTacToe
+* **TicTacToe**
  * Coordinates other classes
  * Creates a Board object
  * Contains main game loop
 
-* UserPrompt
+* **UserPrompt**
  * Variables:
  * Methods:
  * Input: Welcomes user and prompts for input; returns an int: 1 for a Player vs Computer game, 2 for Player vs  Player, and 0 to exit
-* Board
+* **Board**
  * Variables:
  * int array boardState: represents positions on the board
  * int currentPlayer: 1 for X, 0 for O, maybe?
