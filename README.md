@@ -26,6 +26,7 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
    * move: sends an X or an O to a spot on the board
       * parameters: int spot
       make sure the move is valid/spot is unoccupied
+
 * **AIOpponent**
    * Variables
    * Methods
@@ -38,9 +39,9 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
          make sure the move is valid/spot is unoccupied
 
 
-Sample program run:
-1.  User starts program
-2.  Welcome screen displayed, asks if user wants to play a game
+#Sample program run:
+1. User starts program
+2. Welcome screen displayed, asks if user wants to play a game
 3.  Takes either y or n as input
   a.  If n, exit program
   b.  If y, continue
