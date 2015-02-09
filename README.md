@@ -18,14 +18,14 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
     * int currentPlayer: 1 for X, 0 for O, maybe?
     “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
  * Methods:
-  * display: prints the current board state
-  * reset: resets all values in the array to 0
-  * endTurn: swaps the currentPlayer
-  * checkTie: determines whether or not the game is a tie (by seeing if there are any spaces left open: checkWinner       should run after each move is made, so if it doesn’t see a winner, checkTie will run and report a tie if there        are no more open spaces)
-  * checkWinner: checks whether or not the active player won after a play is made
-  * move: sends an X or an O to a spot on the board
-   * parameters: int spot
-     make sure the move is valid/spot is unoccupied
+    * display: prints the current board state
+    * reset: resets all values in the array to 0
+    * endTurn: swaps the currentPlayer
+    * checkTie: determines whether or not the game is a tie (by seeing if there are any spaces left open: checkWinner       should run after each move is made, so if it doesn’t see a winner, checkTie will run and report a tie if there        are no more open spaces)
+    * checkWinner: checks whether or not the active player won after a play is made
+    * move: sends an X or an O to a spot on the board
+      * parameters: int spot
+      make sure the move is valid/spot is unoccupied
 
 * **AIOpponent**
  * Variables
