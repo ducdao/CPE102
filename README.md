@@ -47,18 +47,18 @@ Classes for the project.
   1. If n, exit program
   2. If y, continue
 4. Ask if user would like to play vs AI or vs another player
-  a. Possibly ask for 1 or 2 players to simplify input, while noting that if user picks 1 player, they will play           against the AI
-  b. If player picks 1 player, ask if they would like to go first or second
+  1. Possibly ask for 1 or 2 players to simplify input, while noting that if user picks 1 player, they will play           against the AI
+  2. If player picks 1 player, ask if they would like to go first or second
 5. Begin game, display blank board
-  a. Prompt player for their move
-  b. If the AI is going first, just make the AI’s move, then prompt player
+  1. Prompt player for their move
+  2. If the AI is going first, just make the AI’s move, then prompt player
 6. Ensure that the appropriate functionality is present:
-  a.print an error if user inputs an invalid move:
-    i.  incorrect input format (e.g. @!, c8)
-    ii.  non-empty space (e.g. b2 when b2 is filled)
-  b.  make sure the AI works properly (e.g. doesn’t cheat or break)
-  c.  check to see if the active player has won after turn is taken
-  d.  check to see if it’s a tie game
-7.  Once game is finished, display an appropriate message and prompt if user wants to play again
-  a.  if n, exit program
-  b.  if y, go back to step 4
+  1.print an error if user inputs an invalid move:
+    1.  incorrect input format (e.g. @!, c8)
+    2.  non-empty space (e.g. b2 when b2 is filled)
+  2. make sure the AI works properly (e.g. doesn’t cheat or break)
+  3. check to see if the active player has won after turn is taken
+  4. check to see if it’s a tie game
+7. Once game is finished, display an appropriate message and prompt if user wants to play again
+  1. if n, exit program
+  2. if y, go back to step 4
