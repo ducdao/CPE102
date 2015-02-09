@@ -18,7 +18,7 @@ Classes for the project.
     * int array boardState: represents positions on the board
     * int currentPlayer: 1 for X, 0 for O, maybe?
     “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
-* Methods:
+* Methods
     * display: prints the current board state
     * reset: resets all values in the array to 0
     * endTurn: swaps the currentPlayer
