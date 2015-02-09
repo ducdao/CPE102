@@ -5,19 +5,20 @@ Tic Tac Toe
 
 ##Classes
 * TicTacToe
-  * Coordinates other classes
-** Creates a Board object
-** Contains main game loop
-*UserPrompt
-variables:
-methods:
-input: welcomes user and prompts for input; returns an int: 1 for a Player vs Computer game, 2 for Player vs Player, and 0 to exit
-*Board
-variables:
-int array boardState: represents positions on the board
-int currentPlayer: 1 for X, 0 for O, maybe?
-“victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need this]
-methods:
+ * Coordinates other classes
+ * Creates a Board object
+ * Contains main game loop
+
+* UserPrompt
+ * Variables:
+ * Methods:
+ * Input: Welcomes user and prompts for input; returns an int: 1 for a Player vs Computer game, 2 for Player vs  Player, and 0 to exit
+* Board
+ * Variables:
+ * int array boardState: represents positions on the board
+ * int currentPlayer: 1 for X, 0 for O, maybe?
+   “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
+ * Methods:
 display: prints the current board state
 reset: resets all values in the array to 0
 endTurn: swaps the currentPlayer
