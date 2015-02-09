@@ -5,7 +5,7 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
 ##Classes
 Classes for the project.
 ####TicTacToe
-*Coordinates other classes
+* Coordinates other classes
 * Creates a Board object
 * Contains main game loop
 
