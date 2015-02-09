@@ -5,9 +5,9 @@ Tic Tac Toe
 
 ##Classes
 * TicTacToe
-coordinates other classes
-creates a Board object
-contains main game loop
+** Coordinates other classes
+** Creates a Board object
+** Contains main game loop
 *UserPrompt
 variables:
 methods:
