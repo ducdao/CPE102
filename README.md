@@ -10,15 +10,15 @@ Classes for the project.
 * Contains main game loop
 
 ####UserPrompt
-* Methods
+* **Methods**
     * Input: Welcomes user and prompts for input; returns an int: 1 for a Player vs Computer game, 2 for Player vs          Player, and 0 to exit
 
 ####Board
-* Variables
+* **Variables**
     * int array boardState: represents positions on the board
     * int currentPlayer: 1 for X, 0 for O, maybe?
     “victory conditions”: a way to keep track of possible ways to win (for the checkWinner method) [might not need        this]
-* Methods
+* **Methods**
     * display: prints the current board state
     * reset: resets all values in the array to 0
     * endTurn: swaps the currentPlayer
@@ -29,8 +29,8 @@ Classes for the project.
           make sure the move is valid/spot is unoccupied
 
 ####AIOpponent
-* Variables
-* Methods
+* **Variables**
+* **Methods**
     * bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move         method)
         * Parameters: Board board
           should check the current board state and recognize whether the move to be made is for X or O
