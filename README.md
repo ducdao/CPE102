@@ -30,13 +30,13 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
 * **AIOpponent**
  * Variables
  * Methods
-  * bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move         method)
-  * parameters: Board board
-    should check the current board state and recognize whether the move to be made is for X or O
-    make sure the move is valid/spot is unoccupied
-  * randomMove: alternatively, the AI could just move randomly
-   * parameters: Board board
-     make sure the move is valid/spot is unoccupied
+    * bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move         method)
+      * parameters: Board board
+        should check the current board state and recognize whether the move to be made is for X or O
+        make sure the move is valid/spot is unoccupied
+    * randomMove: alternatively, the AI could just move randomly
+      * parameters: Board board
+        make sure the move is valid/spot is unoccupied
 
 
 #Sample Program
