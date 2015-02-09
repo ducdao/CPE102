@@ -39,24 +39,24 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
 
 
 Sample program run:
-1. User starts program
-2. Welcome screen displayed, asks if user wants to play a game
-3. Takes either y or n as input
-  a. If n, exit program
-  b. If y, continue
-4. Ask if user would like to play vs AI or vs another player
-  a. Possibly ask for 1 or 2 players to simplify input, while noting that if user picks 1 player, they will play          against the AI
-  b. If player picks 1 player, ask if they would like to go first or second
-5. Begin game, display blank board
-  a. Prompt player for their move
-  b. If the AI is going first, just make the AI’s move, then prompt player
-6. Ensure that the appropriate functionality is present:
-  a. print an error if user inputs an invalid move:
-    i. incorrect input format (e.g. @!, c8)
-    ii. non-empty space (e.g. b2 when b2 is filled)
-  b. make sure the AI works properly (e.g. doesn’t cheat or break)
-  c. check to see if the active player has won after turn is taken
-  d. check to see if it’s a tie game
-7. Once game is finished, display an appropriate message and prompt if user wants to play again
-  a. if n, exit program
-  b. if y, go back to step 4
+1.  User starts program
+2.  Welcome screen displayed, asks if user wants to play a game
+3.  Takes either y or n as input
+  a.  If n, exit program
+  b.  If y, continue
+4.  Ask if user would like to play vs AI or vs another player
+  a.  Possibly ask for 1 or 2 players to simplify input, while noting that if user picks 1 player, they will play          against the AI
+  b.  If player picks 1 player, ask if they would like to go first or second
+5.  Begin game, display blank board
+  a.  Prompt player for their move
+  b.  If the AI is going first, just make the AI’s move, then prompt player
+6.  Ensure that the appropriate functionality is present:
+  a.  print an error if user inputs an invalid move:
+    i.  incorrect input format (e.g. @!, c8)
+    ii.  non-empty space (e.g. b2 when b2 is filled)
+  b.  make sure the AI works properly (e.g. doesn’t cheat or break)
+  c.  check to see if the active player has won after turn is taken
+  d.  check to see if it’s a tie game
+7.  Once game is finished, display an appropriate message and prompt if user wants to play again
+  a.  if n, exit program
+  b.  if y, go back to step 4
