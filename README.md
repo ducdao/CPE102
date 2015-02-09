@@ -39,20 +39,20 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
          make sure the move is valid/spot is unoccupied
 
 
-#Sample program run:
+#$Sample Program
 1. User starts program
 2. Welcome screen displayed, asks if user wants to play a game
-3.  Takes either y or n as input
-  a.  If n, exit program
-  b.  If y, continue
-4.  Ask if user would like to play vs AI or vs another player
-  a.  Possibly ask for 1 or 2 players to simplify input, while noting that if user picks 1 player, they will play          against the AI
-  b.  If player picks 1 player, ask if they would like to go first or second
-5.  Begin game, display blank board
-  a.  Prompt player for their move
-  b.  If the AI is going first, just make the AI’s move, then prompt player
-6.  Ensure that the appropriate functionality is present:
-  a.  print an error if user inputs an invalid move:
+3. Takes either y or n as input
+  a. If n, exit program
+  b. If y, continue
+4. Ask if user would like to play vs AI or vs another player
+  a. Possibly ask for 1 or 2 players to simplify input, while noting that if user picks 1 player, they will play           against the AI
+  b. If player picks 1 player, ask if they would like to go first or second
+5. Begin game, display blank board
+  a. Prompt player for their move
+  b. If the AI is going first, just make the AI’s move, then prompt player
+6. Ensure that the appropriate functionality is present:
+  a.print an error if user inputs an invalid move:
     i.  incorrect input format (e.g. @!, c8)
     ii.  non-empty space (e.g. b2 when b2 is filled)
   b.  make sure the AI works properly (e.g. doesn’t cheat or break)
