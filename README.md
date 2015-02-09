@@ -5,7 +5,7 @@ Notes for all the classes, methods, and varaibles we're using for Project 1.
 ##Classes
 Classes for the project.
 ####TicTacToe
-* Coordinates other classes
+*Coordinates other classes
 * Creates a Board object
 * Contains main game loop
 
@@ -44,8 +44,8 @@ Classes for the project.
 1. User starts program
 2. Welcome screen displayed, asks if user wants to play a game
 3. Takes either y or n as input
-  a. If n, exit program
-  b. If y, continue
+  1. If n, exit program
+  2. If y, continue
 4. Ask if user would like to play vs AI or vs another player
   a. Possibly ask for 1 or 2 players to simplify input, while noting that if user picks 1 player, they will play           against the AI
   b. If player picks 1 player, ask if they would like to go first or second
