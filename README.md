@@ -4,8 +4,8 @@ CPE 102 Project Notes
 Tic Tac Toe
 
 ##Classes
-1. TicTacToe
-⋅⋅* Coordinates other classes
+* TicTacToe
+* Coordinates other classes
 ** Creates a Board object
 ** Contains main game loop
 *UserPrompt
