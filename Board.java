@@ -26,7 +26,8 @@ public class Board {
 	 */
 	public void resetGame() 
    {
-		for(int i =0; i < boardState.length; i++) {
+		for(int i =0; i < boardState.length; i++) 
+      {
 			boardState[i] = 0;
 			currentPlayer = 1;
 		}
@@ -35,7 +36,8 @@ public class Board {
 	/*
 	 * Swaps the currentPlayer from X's to O's or vice versa, signifying that the turn is over.
 	 */
-	public void endTurn() {
+	public void endTurn() 
+   {
 		currentPlayer *= -1;
 	}
 	
@@ -44,7 +46,8 @@ public class Board {
 	 * Sends a 1 when it's X's turn and a -1 when it's O's turn.
 	 * @param space The space (1-9) a player has selected for their move.
 	 */
-	public void setMove(int space) {
+	public void setMove(int space) 
+   {
 		boardState[space - 1] = currentPlayer;
 	}
 	
@@ -52,37 +55,48 @@ public class Board {
 	 * Checks to see if the current player has won the game. If so,
 	 * returns true, else returns false.
 	 */
-	public boolean checkWin() {
+	public boolean checkWin() 
+   {
 		
-		for(int i = 0; i < 6; i++) {
+		for(int i = 0; i < 6; i++) 
+      {
 			
 			//Make sure we're checking for the current player
-			if(boardState[i] == currentPlayer) {
+			if(boardState[i] == currentPlayer) 
+         {
 			
 				//Checks the columns
-				if(i == 0 || i == 1 || i == 2) {
-					if(boardState[i] == boardState[i+3] && boardState[i+3] == boardState[i+6]) {
+				if(i == 0 || i == 1 || i == 2) 
+            {
+					if(boardState[i] == boardState[i+3] && boardState[i+3] == boardState[i+6]) 
+               {
 						return true;
 					}
 				}
 				
 				//Checks the rows
-				if(i == 0 || i == 3 || i == 6) {
-					if(boardState[i] == boardState[i+1] && boardState[i+1] == boardState[i+2]) {
+				if(i == 0 || i == 3 || i == 6) 
+            {
+					if(boardState[i] == boardState[i+1] && boardState[i+1] == boardState[i+2]) 
+               {
 						return true;
 					}
 				}
 				
 				//Checks the top-left to bottom-right diagonal
-				if(i == 0) {
-					if(boardState[i] == boardState[i+4] && boardState[i+4] == boardState[i+8]) {
+				if(i == 0) 
+            {
+					if(boardState[i] == boardState[i+4] && boardState[i+4] == boardState[i+8]) 
+               {
 						return true;
 					}
 				}
 				
 				//Checks the top-right to bottom-left diagonal
-				if(i == 2) {
-					if(boardState[i] == boardState[i+2] && boardState[i+2] == boardState[i+4]) {
+				if(i == 2) 
+            {
+					if(boardState[i] == boardState[i+2] && boardState[i+2] == boardState[i+4]) 
+               {
 						return true;
 					}
 				}
@@ -97,9 +111,12 @@ public class Board {
 	 * Run this after running checkWin. Returns true if there are no open
 	 * spaces left and false otherwise.
 	 */
-	public boolean checkTie() {
-		for(int i = 0; i < boardState.length; i++) {
-			if(boardState[i] == 0) {
+	public boolean checkTie() 
+   {
+		for(int i = 0; i < boardState.length; i++) 
+      {
+			if(boardState[i] == 0) 
+         {
 				return false;
 			}
 		}
@@ -112,10 +129,12 @@ public class Board {
 	 * Elements of boardState with a value of 0 are unoccupied,
 	 * with 1 are X's, and with -1 are O's.
 	 */
-	public void displayBoard() {
+	public void displayBoard() 
+   {
 		
 		String[] e = new String[9]; //This string array will populate the board
-		for(int i = 0; i < boardState.length; i++) {
+		for(int i = 0; i < boardState.length; i++) 
+      {
 			if(boardState[i] == 0)
 					e[i] = " ";
 			if(boardState[i] == 1)
