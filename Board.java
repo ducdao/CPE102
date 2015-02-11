@@ -24,7 +24,8 @@ public class Board {
 	 * In other words, sets all boardState elements to 0 (unoccupied) and crrentPlayer
 	 * to 1 (X's turn)
 	 */
-	public void resetGame() {
+	public void resetGame() 
+   {
 		for(int i =0; i < boardState.length; i++) {
 			boardState[i] = 0;
 			currentPlayer = 1;
