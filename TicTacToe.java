@@ -9,9 +9,12 @@ public class TicTacToe
         //Prompts the user to play tic-tac-toe
         UserPrompt userInput = new UserPrompt();
 
+        // Outer while loop to keep the game going
+
         //Returns 1 (Player vs Computer) or 2 (Player vs Player)
         gameMode = userInput.input();
         
+        // Reset the board / Display blank board
         Board b = new Board();
         b.printBoard();
         
@@ -19,9 +22,8 @@ public class TicTacToe
         if(gameMode == 1)
         {
             System.out.println("Execute Player vs Computer class!");
-            // Reset the board / Display blank board
             // Prompt player for their move / scan in position
-            // While loop to keep program running until winner
+            // Inner while loop to keep player vs AI running until winner
             // Check that the input is correctly formatted and space is not already occupied
             // Fill the space with the player's move
             // Print the new board
@@ -35,27 +37,25 @@ public class TicTacToe
             // Fill the space with the computer's move
             // Print the new board
             // Check to see if winner 
-               // If winner, display message and prompt to play another game
+               // If winner, display message
                // If no winner, prompt the player for a new move / scan in position
         }
         //Execute Player vs Player class
         else if(gameMode == 2)
         {
             System.out.println("Execute Player vs Player class!");
-            // Reset the board / Display blank board
             // Prompt player 1 for their move / scan in position
-            // While loop to make sure game doesn't terminate until winner/tie
+            // Another inner while loop to make sure game doesn't terminate until winner/tie
             // Check that the input is correctly formatted and space is not already occupied
             // Fill the space with the player's move
             // Print the new board
             // Check to see if there is a winner or a tie
-               // If winner, display message and return to top of program
-                  // Prompt user to play another game
-                     // If yes, return to top of program
-                     // If no, exit the program
-            // Prompt player 2 for their move / scan in position (if no winner)
+               // If winner, display message and exit loop
+               // If no winner, prompt player 2 for their move / scan in position
             
             
         }
+        
+        // Prompt user to play another game
     }
 }
