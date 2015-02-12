@@ -8,7 +8,7 @@ public class Board
 	private int[] boardState = {
 			0, 0, 0,
 			0, 0, 0,
-			0, 0, 0};
+			0, 0, 0 };
 	
 	/*
 	 * The current player. 1 represents X's turn, and -1 represents O's turn.
