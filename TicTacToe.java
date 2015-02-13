@@ -24,9 +24,17 @@ public class TicTacToe
             System.out.println("Execute Player vs Computer class!");
             // Prompt player for their move / scan in position
             // Inner while loop to keep player vs AI running until winner
+               //while(b.checkWin())
+               //{
+                
+               //}
             // Check that the input is correctly formatted and space is not already occupied
+               //Logic logic = new Logic(); 
+               //logic.isValidMove();
             // Fill the space with the player's move
+               //b.setMove();
             // Print the new board
+               //b.displayBoard();
             // Check to see if there is a winner or a tie
                // If winner, display message
                // Prompt user to play another game
