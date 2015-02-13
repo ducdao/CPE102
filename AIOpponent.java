@@ -4,6 +4,14 @@ public class AIOpponent
 {
 	// 1 = X, -1 = O
 
+	//This method may not be finished due to time constraint
+	public int[] bestMove(Board boardState)
+	{
+		int[] currentBoard = boardState.get();
+
+		
+	}
+
 	public int[] randomMove(Board boardState)
 	{
 		//Get the current state of the board,
