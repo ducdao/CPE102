@@ -97,7 +97,11 @@ public class Board
 	
 	public boolean isValidMove(int space)
         {
+<<<<<<< HEAD
         if(boardState[space] == 0)
+=======
+        if(boardState[(space)] == 0)
+>>>>>>> 8e9a1b4adff819bc4f03fbfa517d72a961ee0a39
         {
             return true;
         }
