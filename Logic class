@@ -1,0 +1,22 @@
+/*
+ *Checks to see if the move a player inputs is valid. 
+ *Must make a board and then pass it on as a parameter.
+ *Returns true if the space a player has selected is empty 
+ *Returns false if space is not empty
+ *@param board The board made that player passed on as parameter. 
+ * 
+ */
+public class Logic
+{
+    public static boolean isValidMove(int board[])
+    {
+        if((board.space-1) == ' ')
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
