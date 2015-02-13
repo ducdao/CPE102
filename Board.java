@@ -95,7 +95,7 @@ public class Board
 		boardState[space - 1] = currentPlayer;
 	}
 	
-	public static isValidMove(int space)
+	public boolean isValidMove(int space)
         {
         if(boardState[(space-1)] == 0)
         {
