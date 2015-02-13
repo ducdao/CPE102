@@ -15,10 +15,54 @@ public class Board
 	 */
 	private int currentPlayer = 1;
 
-	//Constructors
+	//Constructors - none!
 	
 	//Methods
-	
+
+	/*
+	 * Standard boardState accessor. Returns an int array.
+	 */
+	public int[] getBoardState()
+	{
+		return boardState;
+	}
+
+	/*
+	 * boardState element accessor. Takes an int (0-8) as a parameter and
+	 * returns an int corresponding to the element in that index of the array.
+	 * @param index The index of the boardState array to be accessed.
+	 */
+	public int getBoardPosition(int index)
+	{
+		return boardState[index];
+	}
+
+	/*
+	 * boardState element mutator. Takes two ints as parameters and
+	 * modifies an element of the boardState array.
+	 * @param index The index of the boardState array to be accessed.
+	 */
+	public void setBoardPosition(int index, int newValue)
+	{
+		boardState[index] = newValue;
+	}
+
+	/*
+	 * Standard currentPlayer accessor. Returns an int.
+	 */
+	public int getCurrentPlayer()
+	{
+		return currentPlayer;
+	}
+
+	/*
+	 * Standard currentPlayer mutator.
+	 */
+	public void setCurrentPlayer(int somePlayer)
+	{
+		currentPlayer = somePlayer;
+	}
+
 	/*
 	 * Resets boardState and currentPlayer to values suitable for starting a new game.
 	 * In other words, sets all boardState elements to 0 (unoccupied) and crrentPlayer
