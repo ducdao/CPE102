@@ -34,8 +34,10 @@ public class UserPrompt
         
         return gameMode;
     }
+    
     public int moveInput()
     {
+        Scanner in = new Scanner(System.in);
         System.out.print("Make your move: ");
         moveInput = in.nextInt();
         return moveInput;
