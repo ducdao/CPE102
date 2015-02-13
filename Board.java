@@ -136,11 +136,17 @@ public class Board
 		for(int i = 0; i < boardState.length; i++) 
         {
 			if(boardState[i] == 0)
-					e[i] = " ";
+			{
+				e[i] = " ";
+			}
 			if(boardState[i] == 1)
-					e[i] = "X";
+			{
+				e[i] = "X";
+			}
 			if(boardState[i] == -1)
-					e[i] = "O";
+			{
+				e[i] = "O";
+			}
 		}
 		
 		System.out.println(" -------");
