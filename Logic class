@@ -1,16 +1,19 @@
 /*
  *Checks to see if the move a player inputs is valid. 
- *Must make a board and then pass it on as a parameter.
+ *Refer to setMove which passes space in as a parameter
  *Returns true if the space a player has selected is empty 
  *Returns false if space is not empty
- *@param board The board made that player passed on as parameter. 
+ *I know we talked about creating a board and passing that on as a paramter 
+ * but I wasn't sure about how we wanted to go about doing so.
+ *This is the rough format. 
+ *@param space 
  * 
  */
 public class Logic
 {
-    public static boolean isValidMove(int board[])
+    public static boolean isValidMove(int space)
     {
-        if((board.space-1) == ' ')
+        if((space-1) == ' ')
         {
             return true;
         }
