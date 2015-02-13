@@ -91,10 +91,21 @@ public class Board
 	 * @param space The space (1-9) a player has selected for their move.
 	 */
 	public void setMove(int space) 
-    {
+        {
 		boardState[space - 1] = currentPlayer;
 	}
 	
+	public static isValidMove(int space)
+        {
+        if(boardState[(space-1)] == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 	/*
 	 * Checks to see if the current player has won the game. If so,
 	 * returns true, else returns false.
