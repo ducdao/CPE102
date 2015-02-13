@@ -88,16 +88,16 @@ public class Board
 	/*
 	 * Inputs a move to the board. Does not check if the move is legal.
 	 * Sends a 1 when it's X's turn and a -1 when it's O's turn.
-	 * @param space The space (1-9) a player has selected for their move.
+	 * @param space The space (0-8) a player has selected for their move.
 	 */
 	public void setMove(int space) 
         {
-		boardState[space - 1] = currentPlayer;
+		boardState[space] = currentPlayer;
 	}
 	
 	public boolean isValidMove(int space)
         {
-        if(boardState[(space-1)] == 0)
+        if(boardState[space] == 0)
         {
             return true;
         }
@@ -210,6 +210,17 @@ public class Board
 		System.out.println(" |" + e[3] + "|" + e[4] + "|" + e[5] + "|");
 		System.out.println(" |-+-+-|");
 		System.out.println(" |" + e[6] + "|" + e[7] + "|" + e[8] + "|");
+		System.out.println(" -------");
+	}
+
+	public void displayDummyBoard()
+	{
+		System.out.println(" -------");
+		System.out.println(" |0|1|2|");
+		System.out.println(" -------");
+		System.out.println(" |3|4|5|");
+		System.out.println(" -------");
+		System.out.println(" |6|7|8|");
 		System.out.println(" -------");
 	}
 }
