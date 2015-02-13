@@ -34,4 +34,10 @@ public class UserPrompt
         
         return gameMode;
     }
+    public int moveInput()
+    {
+        System.out.print("Make your move: ");
+        moveInput = in.nextInt();
+        return moveInput;
+    }
 }
