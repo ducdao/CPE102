@@ -4,9 +4,11 @@ public class TicTacToe
 {
     public static void main(String[] args)
     {
-        int gameMode;
+        int gameMode = 100;
         int spaceInput;
-    
+        
+        System.out.println("CPE 102 - Project 1 - Alex Deany, Duc Dao, Erza Bertuccelli, and Leticia Esparza\n");
+        
         //Prompts the user to play tic-tac-toe
         UserPrompt userInput = new UserPrompt();
 
@@ -61,7 +63,7 @@ public class TicTacToe
                     
                   }
                   
-              System.out.println("Player " + b.getCurrentPlayer() + "wins!");     
+              System.out.println("Player " + b.getCurrentPlayer() + " wins!");     
            }
            //Execute Player vs Player class
            else if(gameMode == 2)
@@ -78,7 +80,7 @@ public class TicTacToe
                   
                while(!b.checkWin() && !b.checkTie())
                {
-                -    b.displayBoard();
+                    b.displayBoard();
                     
                     spaceInput = userInput.moveInput();
                     
@@ -88,12 +90,21 @@ public class TicTacToe
                     }
                     
                     b.setMove(spaceInput);
-                    b.checkWin();
-                    b.checkTie();
+                    
+                    if(b.checkWin())
+                    {
+                       System.out.println("Player " + b.getCurrentPlayer() + " wins!");
+                       System.exit(0);   
+                    }
+                    if(b.checkTie())
+                    {
+                       System.out.println("Tie game. :^(");
+                       System.exit(0);   
+                    }
                     b.endTurn();
                }
                
-               System.out.println("Player " + b.getCurrentPlayer() + "wins!");  
+               
            }
            
            
