@@ -5,6 +5,7 @@ public class TicTacToe
     public static void main(String[] args)
     {
         int gameMode;
+        int spaceInput;
     
         //Prompts the user to play tic-tac-toe
         UserPrompt userInput = new UserPrompt();
@@ -24,10 +25,33 @@ public class TicTacToe
             System.out.println("Execute Player vs Computer class!");
             // Prompt player for their move / scan in position
             // Inner while loop to keep player vs AI running until winner
-               //while(b.checkWin())
-               //{
-                
-               //}
+               while(!b.checkWin() && !b.checkTie())
+               {
+                 b.displayBoard();
+                 
+                 spaceInput = userInput.moveInput();
+                 
+                 while(!b.isValidMove(spaceInput))
+                 {
+                     spaceInput = userInput.moveInput();
+                 }
+                 
+                 b.setMove(spaceInput);
+                 b.checkWin();
+                 b.checkTie();
+                 b.endTurn();
+                 b.displayBoard();
+                 
+                 if(!b.checkWin() && !b.checkTie())
+                 {
+                    System.out.println("Computer is making move...");
+                    AIOpponent ai = new AIOpponent();
+                    spaceInput = ai.randomMove(b);
+                    b.setMove(spaceInput);
+                    b.endTurn();
+                 }
+                 
+               }
             // Check that the input is correctly formatted and space is not already occupied
                //Logic logic = new Logic(); 
                //logic.isValidMove();
