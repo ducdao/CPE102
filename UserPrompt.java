@@ -36,8 +36,21 @@ public class UserPrompt
     }
     public int moveInput()
     {
+        Scanner in = new Scanner(System.in);
         System.out.print("Make your move: ");
         moveInput = in.nextInt();
-        return moveInput;
+        
+        while(moveInput != 1 && moveInput != 2 && moveInput != 3 && moveInput != 4 && moveInput != 5 && moveInput != 6 && moveInput != 7 && moveInput != 8 && moveInput != 9)
+        {
+            System.out.println("ERROR: Please enter a valid position!");
+            System.out.print("Make your move: ");
+            moveInput = in.next();
+        }
+
+        if (moveInput == 1 || moveInput == 2 || moveInput == 3 || moveInput == 4 || moveInput == 5 || moveInput == 6 || moveInput == 7 || moveInput == 8 || moveInput == 9)
+        {    
+            return moveInput;
+        }
+
     }
 }
