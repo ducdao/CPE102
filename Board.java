@@ -56,7 +56,7 @@ public class Board
 		if (currentPlayer == 1)
 			player = "1";
 		else
-			player = "2"
+			player = "2";
 
 		return player;
 
