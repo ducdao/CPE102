@@ -48,17 +48,11 @@ public class Board
 	}
 
 	/*
-	 * Standard currentPlayer accessor. Returns a string containing 1 or 2
+	 * Standard currentPlayer accessor. Returns an int containing 1 or -1
 	 */
-	public String getCurrentPlayer()
+	public int getCurrentPlayer()
 	{
-		String player = "1";
-		if (currentPlayer == 1)
-			player = "1";
-		else
-			player = "2";
-
-		return player;
+		return currentPlayer;
 
 	}
 

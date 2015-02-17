@@ -4,29 +4,16 @@ public class AIOpponent
 {
 	// 1 = X, -1 = O
 
-	//This method may not be finished due to time constraint
-	public int[] bestMove(Board boardState)
-	{
-		int[] currentBoard = boardState.get();
-
-		
-	}
-
-	public int[] randomMove(Board boardState)
+	public int randomMove()
 	{
 		//Get the current state of the board,
-		//assuming Ezra wrote the accessor (get) method
-		int[] currentBoard = boardState.get(); 
+		//assuming Ezra wrote the accessor (get) method 
 		
 		//Generate a random number between 0 and 8
 		//and set it equal to "randomInt" 
 		Random rng = new Random();
-		int randomInt = rng.nextInt(9); 
+		int randomInt = rng.nextInt(9);    
 
-		//Set a O (the letter O!) at a 
-		//random position on the board 
-		currentBoard[randomInt] = -1;     
-
-		return currentBoard;
+		return randomInt;
 	}
 }

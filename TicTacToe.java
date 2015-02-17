@@ -6,110 +6,126 @@ public class TicTacToe
     {
         int gameMode = 100;
         int spaceInput;
-        
+
         System.out.println("CPE 102 - Project 1 - Alex Deany, Duc Dao, Erza Bertuccelli, and Leticia Esparza\n");
-        
+
         //Prompts the user to play tic-tac-toe
         UserPrompt userInput = new UserPrompt();
+
+        //Returns 1 (Player vs Computer) or 2 (Player vs Player)
+        gameMode = userInput.input();
 
         // Outer while loop to keep the game going
         while(gameMode != 0)
         {
-        //Returns 1 (Player vs Computer) or 2 (Player vs Player)
-        gameMode = userInput.input();
-        
-           // Reset the board
-           Board b = new Board();
-           
-           //Execute Player vs Computer class
-           if(gameMode == 1)
-           {
-               System.out.println("Execute Player vs Computer class!");
-               // Prompt player for their move / scan in position
-               // Inner while loop to keep player vs AI running until winner
-                  while(!b.checkWin() && !b.checkTie())
-                  {
+            // Reset the board
+            Board b = new Board();
+
+            b.displayDummyBoard();
+
+            //Execute Player vs Computer class
+            if(gameMode == 1)
+            {
+                // Prompt player for their move / scan in position
+                // Inner while loop to keep player vs AI running until winner
+                while(!b.checkWin() && !b.checkTie())
+                {
                     b.displayBoard();
-                    
-                    spaceInput = userInput.moveInput();
-                    
+
+                    if(b.getCurrentPlayer() == 1)
+                    {
+                        spaceInput = userInput.moveInput(b);
+                    }
+                    else
+                    {
+                        AIOpponent ai = new AIOpponent();
+                        spaceInput = ai.randomMove();
+                    }
+
+                    //Checks if it's a valid input, if not ask again
                     while(!b.isValidMove(spaceInput))
                     {
-                        spaceInput = userInput.moveInput();
+                        if(b.getCurrentPlayer() == 1)
+                        {
+                            spaceInput = userInput.moveInput(b);
+                        }
+                        else
+                        {
+                            AIOpponent ai = new AIOpponent();
+                            spaceInput = ai.randomMove();
+                        }
                     }
-                    
-                    b.setMove(spaceInput);
-                    b.checkWin();
-                    b.checkTie();
-                    b.endTurn();
-                    b.displayBoard();
-                    
-                    if(!b.checkWin() && !b.checkTie())
+
+                    if(b.getCurrentPlayer() == -1)
                     {
-                       System.out.println("Computer is making move...");
-                       AIOpponent ai = new AIOpponent();
-                       spaceInput = ai.randomMove(b);
-                       
-                       while(!b.isValidMove(spaceInput))
-                       {
-                           spaceInput = ai.randomMove(b);
-                       }
-                       
-                       b.setMove(spaceInput);
-                       b.checkWin();
-                       b.checkTie();
-                       b.endTurn();
+                        System.out.println("Computer is making move...");
                     }
-                    
-                  }
-                  
-              System.out.println("Player " + b.getCurrentPlayer() + " wins!");     
-           }
-           //Execute Player vs Player class
-           else if(gameMode == 2)
-           {
-               System.out.println("Execute Player vs Player class!");
-               // Prompt player 1 for their move / scan in position
-               // Another inner while loop to make sure game doesn't terminate until winner/tie
-               // Check that the input is correctly formatted and space is not already occupied
-               // Fill the space with the player's move
-               // Print the new board
-               // Check to see if there is a winner or a tie
-                  // If winner, display message and exit loop
-                  // If no winner, prompt player 2 for their move / scan in position
-                  
-               while(!b.checkWin() && !b.checkTie())
-               {
-                    b.displayBoard();
-                    
-                    spaceInput = userInput.moveInput();
-                    
-                    while(!b.isValidMove(spaceInput))
-                    {
-                        spaceInput = userInput.moveInput();
-                    }
-                    
+
                     b.setMove(spaceInput);
-                    
+
                     if(b.checkWin())
                     {
-                       System.out.println("Player " + b.getCurrentPlayer() + " wins!");
-                       System.exit(0);   
+                        if(b.getCurrentPlayer() == 1)
+                        {
+                            b.displayBoard();
+                            System.out.println("You won! Congrats!");
+                            break;
+                        }
+                        else
+                        {
+                            b.displayBoard();
+                            System.out.println("Computer won. :^(");
+                            break;
+                        }
                     }
-                    if(b.checkTie())
+
+                    b.endTurn();    
+                }
+            }   
+            //Execute Player vs Player class
+            else if(gameMode == 2)
+            {
+                // Prompt player 1 for their move / scan in position
+                // Another inner while loop to make sure game doesn't terminate until winner/tie
+                // Check that the input is correctly formatted and space is not already occupied
+                // Fill the space with the player's move
+                // Print the new board
+                // Check to see if there is a winner or a tie
+                // If winner, display message and exit loop
+                // If no winner, prompt player 2 for their move / scan in position
+
+                while(!b.checkWin() && !b.checkTie())
+                {
+                    b.displayBoard();
+
+                    spaceInput = userInput.moveInput(b);
+
+                    while(!b.isValidMove(spaceInput))
                     {
-                       System.out.println("Tie game. :^(");
-                       System.exit(0);   
+                        spaceInput = userInput.moveInput(b);
                     }
-                    b.endTurn();
-               }
-               
-               
-           }
-           
-           
-           // Prompt user to play another game
-           gameMode = userInput.input();
-         }
+
+                    b.setMove(spaceInput);
+
+                    if(b.checkWin())
+                    {
+                        b.displayBoard();
+                        System.out.println("Player " + b.getCurrentPlayer() + " wins!");
+                        break;
+                    }
+                    else if(b.checkTie())
+                    {
+                        System.out.println("Tie game. :^(");
+                        break;  
+                    }
+
+                    b.endTurn();  
+                }
+            }
+
+            b.resetGame();
+            // Prompt user to play another game
+            gameMode = userInput.input();
+        }
     }
 }

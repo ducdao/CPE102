@@ -4,7 +4,6 @@ public class UserPrompt
 {
     public int input()
     {
-        System.out.println("CPE 102 - Project 1 - Alex Deany, Duc Dao, Erza Bertuccelli, and Leticia Esparza\n");
         System.out.print("Welcome to Tic Tac Toe! Would you like to play (Y/N)?  ");
         Scanner in = new Scanner(System.in);
         String user = in.next();
@@ -35,11 +34,23 @@ public class UserPrompt
         return gameMode;
     }
     
-    public int moveInput()
+    public int moveInput(Board b)
     {
         Scanner in = new Scanner(System.in);
-        System.out.print("Make your move: ");
-        moveInput = in.nextInt();
+        String player;
+
+        if(b.getCurrentPlayer() == 1)
+        {
+            player = "Player 1, ";
+        }
+        else
+        {
+            player = "Player 2, ";
+        }           
+
+        System.out.print(player + "make your move: ");
+        int moveInput = in.nextInt();
+
         return moveInput;
     }
 }
