@@ -2,18 +2,18 @@
 
 Notes for all the classes, methods, and varaibles we're using for Project 1. Feel free to edit this as needed. Markdown cheat sheet [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-##Classes
+## Classes
 Classes for the project.
 ####TicTacToe
 * Coordinates other classes
 * Creates a Board object
 * Contains main game loop
 
-####UserPrompt
+#### UserPrompt
 * **Methods**
     * Input: Welcomes user and prompts for input; returns an int: 1 for a Player vs Computer game, 2 for Player vs          Player, and 0 to exit
 
-####Board
+#### Board
 * **Variables**
     * int array boardState: represents positions on the board
     * int currentPlayer: 1 for X, 0 for O, maybe?
@@ -28,7 +28,7 @@ Classes for the project.
         * Parameters: int spot
           make sure the move is valid/spot is unoccupied
 
-####AIOpponent
+#### AIOpponent
 * **Variables**
 * **Methods**
     * bestMove: calculates the best move on the board and returns the corresponding spot (can be fed into Board.move         method)
@@ -40,7 +40,7 @@ Classes for the project.
           make sure the move is valid/spot is unoccupied
 
 
-#Sample Program
+# Sample Program
 1. User starts program
 2. Welcome screen displayed, asks if user wants to play a game
 3. Takes either y or n as input
